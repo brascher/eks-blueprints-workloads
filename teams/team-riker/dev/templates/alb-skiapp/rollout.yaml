@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: skiapp
-        image: sharepointoscar/skiapp:v1
+        image: sharepointoscar/skiapp:v2
         imagePullPolicy: Always
         ports:
         - name: http
@@ -72,7 +72,7 @@ spec:
   type: NodePort
   selector:
     app: skiapp
-    
+
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
